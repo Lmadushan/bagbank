@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Rating } from './Rating';
+import { Rating } from './rating';
 
 @Pipe({ name: 'calculateAvg' })
 export class RatingPipe implements PipeTransform {

@@ -3,7 +3,7 @@ import { Hotel } from '../../app/classes/hotel';
 export const HOTELS: Hotel[] = [
     {
         id: '01',
-        name: 'Conrad Pune - Luxury by Hilton',
+        name: 'Luggage Store - Galle Railway Station',
         address: {
             detail: '7 Mangaldas Road, Near Wadia College, Koregaon Park, Opp To Metro House',
             city: 'Pune',
@@ -17,7 +17,7 @@ export const HOTELS: Hotel[] = [
         website: 'http://conradhotels3.hilton.com/en/hotels/india/conrad-pune-PNQCICI/index.html',
         contact: '+91-20-67456745',
         email: 'ConradPune.info@conradhotels.com',
-        type: '5-star',
+        type: '400 Meters from Station',
         rating: {
             food: 4,
             rooms: 5,

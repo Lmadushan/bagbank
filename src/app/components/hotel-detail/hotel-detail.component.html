@@ -5,12 +5,12 @@
        <div class="col-md-8 addrcon">
           <table style="padding:20px;">
              <tr>
-                <td class="titles">Address : </td>
-                <td class="detail"> {{hotelDetails.address.detail}}</td>
+                <td class="titles">Openning Hours : </td>
+                <td class="detail primary" > 05.00 - 24.00</td>
              </tr>
              <tr>
-                <td class="titles">City : </td>
-                <td class="detail"> {{hotelDetails.address.city}}</td>
+                <td class="titles">Address : </td>
+                <td class="detail"> {{hotelDetails.address.detail}}</td>
              </tr>
              <tr>
                 <td class="titles">State : </td>
@@ -50,35 +50,35 @@
     </div>
     <div class="container">
        <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 addrcon">
              <mat-form-field>
                 <h4>Check-in :</h4>
                 <input matInput [matDatepicker]="picker" [(ngModel)]="checkInDate">
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
              </mat-form-field>
-          </div>
-          <div class="col-md-4">
+          
              <mat-form-field>
                 <h4>Check-out :</h4>
                 <input matInput [matDatepicker]="picker2" [(ngModel)]="checkOutDate">
                 <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
                 <mat-datepicker #picker2></mat-datepicker>
              </mat-form-field>
+             <div class="row">
+               <h4>Number of Luggages: <input type="number" min="0" class="input-xs nopeople" [(ngModel)]="adults"> 
+                 
+               </h4>
+              </div>
+              <div class="row">
+                <button class="btn btn-success btn-md" (click)="loadBookingDetail();">Proceed to Checkout</button>
+              </div>
           </div>
           <div class="col-md-4">
-            <div class="row">
-             <h4>Adults: <input type="number" min="0" class="input-xs nopeople" [(ngModel)]="adults"> 
-                Children: <input type="number" min="0" class="input-xs nopeople" [(ngModel)]="children">
-             </h4>
-            </div>
-            <div class="row">
-              <button class="btn btn-success btn-md" (click)="loadBookingDetail();">Proceed to Checkout</button>
-            </div>
+            
           </div>
        </div>
     </div>
-    <h3 style="color:dimgray; margin-bottom:20px; text-align:left;"> Select your Rooms: </h3>
+    <!-- <h3 style="color:dimgray; margin-bottom:20px; text-align:left;"> Select your Rooms: </h3>
     <div class="row">
        <div class="col-md-12 roomdiv" *ngFor="let room of room_types; let i=index;">
           <div class="col-md-4">
@@ -103,5 +103,5 @@
              </div>
           </div>
        </div>
-    </div>
+    </div> -->
  </div>
